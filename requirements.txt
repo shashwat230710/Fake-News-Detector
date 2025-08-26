@@ -1,20 +1,22 @@
+# Core
 numpy==1.26.4
 pandas==2.2.2
+scikit-learn==1.5.1
+
+# Date/time deps
 python-dateutil==2.9.0.post0
 pytz==2024.1
 tzdata==2024.1
-scikit-learn==1.5.1
+
+# Web scraping
 requests==2.32.3
 beautifulsoup4==4.12.3
+
+# NLP + Summarization
+nltk==3.9.1
+transformers==4.44.2
+torch==2.2.2
+sentencepiece==0.2.0
+
+# App framework
 streamlit==1.37.0
-
-
-# API & UI
-fastapi==0.111.0
-uvicorn==0.30.1
-pydantic==2.7.4
-streamlit==1.37.0
-
-# NLP / DL
-transformers==4.43.3
-torch>=2.2.0
