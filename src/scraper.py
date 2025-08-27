@@ -13,7 +13,8 @@ def get_article_text(url: str) -> str:
         r.raise_for_status()
     except Exception as e:
         return f""
-    soup = BeautifulSoup(r.text, 'lxml')
+    soup = BeautifulSoup(r.text, 'html.parser')
+
 
     # Prefer content within <article>, fallback to all <p>
     article = soup.find('article')
