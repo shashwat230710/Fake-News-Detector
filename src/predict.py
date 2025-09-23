@@ -14,6 +14,7 @@ def classify_text(text, model):
         proba = float(model.predict_proba([text_clean])[:,1][0])
     pred = int(model.predict([text_clean])[0])
     return pred, proba
+    
 
 def analyze(text=None, url=None, model_path='models/baseline.joblib', do_summary=True):
     model = load_model(model_path)
