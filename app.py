@@ -3,7 +3,7 @@ from src.scraper import get_article_text
 from src.predict import analyze
 
 # Streamlit app title
-st.title("📰 Fake News Detector & Summarizer")
+st.title(" Fake News Detector & Summarizer")
 
 # Option to choose input type
 input_type = st.radio("Choose input type:", ("URL", "Direct Text"))
